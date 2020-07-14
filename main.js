@@ -21,7 +21,7 @@ function getrandname() {
     nicknameIDX = Math.randomInt(0, nicknames.length);
 
     // Showing the Nicknames
-    names.innerHTML = firstname.value + " " + " ' "+ nicknames[nicknameIDX] + " ' " + sername.value;
+    names.innerHTML = firstname.value + "  ' "+ nicknames[nicknameIDX] + " ' " + sername.value;
 } 
 
 function showallnicnames() {
@@ -30,7 +30,7 @@ function showallnicnames() {
     
     // Show All Nicknames
     for (let n = 0; n < nicknames.length; n++){
-        names.innerHTML += " " + firstname.value + " " + " ' "+ nicknames[n] + " ' " + sername.value + " ";
+        names.innerHTML +=  firstname.value + "  ' "+ nicknames[n] + " ' " + sername.value + "<br> ";
     }
 
 }
