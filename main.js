@@ -16,21 +16,21 @@ document.getElementById("allnicknames").addEventListener("click", showallnicname
 
 // Function
 function getrandname() {
-    
+
     // Getting a random Integer to selct a nickname
     nicknameIDX = Math.randomInt(0, nicknames.length);
 
     // Showing the Nicknames
-    names.innerHTML = firstname.value + "  ' "+ nicknames[nicknameIDX] + " ' " + sername.value;
-} 
+    names.innerHTML = firstname.value + "  ' " + nicknames[nicknameIDX] + " ' " + sername.value;
+}
 
 function showallnicnames() {
     // Clear Previous Listed Names
     names.innerHTML = "";
-    
+
     // Show All Nicknames
-    for (let n = 0; n < nicknames.length; n++){
-        names.innerHTML +=  firstname.value + "  ' "+ nicknames[n] + " ' " + sername.value + "<br> ";
+    for (let n = 0; n < nicknames.length; n++) {
+        names.innerHTML += firstname.value + "  ' " + nicknames[n] + " ' " + sername.value + "<br> ";
     }
 
 }
